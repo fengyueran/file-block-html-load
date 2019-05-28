@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background: blue;
+      }
+    </style>
+    <script>
+      document.onreadystatechange = function () {
+        if (document.readyState === "interactive") {
+          console.log('DOMContentLoaded', document.body.children);
+        }
+      } 
+    </script> 
+    <!-- <script>
+        var now = Date.now();
+        var isRun = true;
+        while(isRun) {
+          var time = Date.now();
+          if (time - now > 2000) {
+            isRun = false;
+          }
+        }
+        console.log('body', document.body);
+        console.log('end');
+    </script> -->
+    <!-- <link rel="stylesheet" href="/main.css" />  -->
+    <script src="/sleep.js"></script>
+  </head>
+  <body>
+    <div />
+  </body>
+</html>
